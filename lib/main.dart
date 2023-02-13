@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:notes_app_flutter/models/notes_model.dart';
 import 'package:notes_app_flutter/pages/add_note.dart';
 import 'package:notes_app_flutter/pages/home.dart';
-import 'package:notes_app_flutter/pages/update_note.dart';
 import 'package:notes_app_flutter/providers/note_provider.dart';
 import 'package:notes_app_flutter/utils/my_colors.dart';
 import 'package:provider/provider.dart';
