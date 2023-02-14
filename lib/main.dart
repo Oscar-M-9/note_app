@@ -29,7 +29,7 @@ class MainApp extends StatelessWidget {
         theme: ThemeData(
           useMaterial3: true,
           appBarTheme: const AppBarTheme(
-            color: MyColors.primary,
+            backgroundColor: MyColors.primary,
             foregroundColor: Colors.white,
           ),
         ),

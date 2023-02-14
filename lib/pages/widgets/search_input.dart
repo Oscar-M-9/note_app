@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
 class SearchInput extends StatelessWidget {
-  final String  hinText;
+  final String hinText;
   final Widget prefixIcon;
   final void Function(String)? onChanged;
-  const SearchInput({
-    super.key, required this.hinText, required this.prefixIcon, this.onChanged
-  });
+  const SearchInput(
+      {super.key,
+      required this.hinText,
+      required this.prefixIcon,
+      this.onChanged});
 
   @override
   Widget build(BuildContext context) {
@@ -15,37 +17,30 @@ class SearchInput extends StatelessWidget {
       child: TextFormField(
         keyboardType: TextInputType.text,
         autocorrect: false,
-        cursorColor: Colors.black,
         onChanged: onChanged,
         style: const TextStyle(
-          color: Colors.black54,
           fontSize: 16.0,
           fontFamily: 'Lato',
           fontWeight: FontWeight.normal,
         ),
         decoration: InputDecoration(
           contentPadding: const EdgeInsets.all(15),
-          prefixIconColor: Colors.black26,
           prefixIcon: prefixIcon,
           hintText: hinText,
           hintStyle: const TextStyle(
-            color: Colors.black26,
             fontWeight: FontWeight.normal,
           ),
           filled: true,
           fillColor: const Color.fromARGB(20, 0, 0, 0),
           enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(30),
-            borderSide: BorderSide.none
-          ),
+              borderRadius: BorderRadius.circular(30),
+              borderSide: BorderSide.none),
           focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(30),
-            borderSide: BorderSide.none
-          ),
+              borderRadius: BorderRadius.circular(30),
+              borderSide: BorderSide.none),
           errorBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(30),
-            borderSide: BorderSide.none
-          ),
+              borderRadius: BorderRadius.circular(30),
+              borderSide: BorderSide.none),
         ),
       ),
     );
