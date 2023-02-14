@@ -31,7 +31,6 @@ class SearchInput extends StatelessWidget {
             fontWeight: FontWeight.normal,
           ),
           filled: true,
-          fillColor: const Color.fromARGB(20, 0, 0, 0),
           enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(30),
               borderSide: BorderSide.none),
