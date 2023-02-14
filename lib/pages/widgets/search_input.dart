@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 class SearchInput extends StatelessWidget {
   final String  hinText;
   final Widget prefixIcon;
+  final void Function(String)? onChanged;
   const SearchInput({
-    super.key, required this.hinText, required this.prefixIcon,
+    super.key, required this.hinText, required this.prefixIcon, this.onChanged
   });
 
   @override
@@ -15,6 +16,7 @@ class SearchInput extends StatelessWidget {
         keyboardType: TextInputType.text,
         autocorrect: false,
         cursorColor: Colors.black,
+        onChanged: onChanged,
         style: const TextStyle(
           color: Colors.black54,
           fontSize: 16.0,
